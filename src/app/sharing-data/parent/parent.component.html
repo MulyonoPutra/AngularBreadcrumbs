@@ -1,0 +1,25 @@
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-body">
+      <p>This is Parent components.</p>
+      <h1>{{ message }}</h1>
+    </div>
+  </div>
+  <div class="card mt-4" *ngIf="checked">
+    <div class="card-body">
+      <p>This should be hidden if checked</p>
+      <h1>{{ message }}</h1>
+    </div>
+  </div>
+</div>
+<div>
+
+</div>
+
+<div class="mt-5">
+  <app-child-two></app-child-two>
+</div>
+
+<div class="mt-5">
+  <app-child></app-child>
+</div>
